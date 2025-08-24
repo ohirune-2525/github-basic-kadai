@@ -1,0 +1,48 @@
+chiyu@LAPTOP-0RBDJN0V MINGW64 ~
+$ mkdir git_challenge
+
+chiyu@LAPTOP-0RBDJN0V MINGW64 ~
+$ cd git_challenge
+
+chiyu@LAPTOP-0RBDJN0V MINGW64 ~/git_challenge
+$ git init
+Initialized empty Git repository in C:/Users/chiyu/git_challenge/.git/
+
+chiyu@LAPTOP-0RBDJN0V MINGW64 ~/git_challenge (main)
+$ touch hello_world.txt
+
+chiyu@LAPTOP-0RBDJN0V MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+
+chiyu@LAPTOP-0RBDJN0V MINGW64 ~/git_challenge (main)
+$ echo "Hello, world!" >> hello_world.txt
+
+chiyu@LAPTOP-0RBDJN0V MINGW64 ~/git_challenge (main)
+$ git commit -m"commit for the first time"
+[main (root-commit) 054f6e6] commit for the first time
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+
+chiyu@LAPTOP-0RBDJN0V MINGW64 ~/git_challenge (main)
+$ echo "こんにちは、世界！" >> hello_world.txt
+
+chiyu@LAPTOP-0RBDJN0V MINGW64 ~/git_challenge (main)
+$ git commit -m "commit for the second time"
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+chiyu@LAPTOP-0RBDJN0V MINGW64 ~/git_challenge (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
