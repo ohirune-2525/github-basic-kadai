@@ -1,0 +1,53 @@
+chiyu@LAPTOP-0RBDJN0V MINGW64 ~
+$ mkdir git_challenge
+
+chiyu@LAPTOP-0RBDJN0V MINGW64 ~
+$ cd git_challenge
+
+chiyu@LAPTOP-0RBDJN0V MINGW64 ~/git_challenge
+$ git init
+Initialized empty Git repository in C:/Users/chiyu/git_challenge/.git/
+
+chiyu@LAPTOP-0RBDJN0V MINGW64 ~/git_challenge (main)
+$ touch hello_world.txt
+
+chiyu@LAPTOP-0RBDJN0V MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+
+chiyu@LAPTOP-0RBDJN0V MINGW64 ~/git_challenge (main)
+$ echo "Hello, world!" >> hello_world.txt
+
+chiyu@LAPTOP-0RBDJN0V MINGW64 ~/git_challenge (main)
+$ git commit -m "commit for the first time"
+[main (root-commit) 5d5bc79] commit for the first time
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+
+chiyu@LAPTOP-0RBDJN0V MINGW64 ~/git_challenge (main)
+$ echo "こんにちは、世界！" >> hello_world.txt
+
+chiyu@LAPTOP-0RBDJN0V MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+chiyu@LAPTOP-0RBDJN0V MINGW64 ~/git_challenge (main)
+$ git commit -m "commit for the second time"
+[main 2d3e87d] commit for the second time
+ 1 file changed, 2 insertions(+)
+
+chiyu@LAPTOP-0RBDJN0V MINGW64 ~/git_challenge (main)
+$ git log
+commit 2d3e87d1443a4eea0321491c69f40c139fdb07d9 (HEAD -> main)
+Author: ohirune-2525 <chiyuki.frst@gmail.com>
+Date:   Tue Sep 2 18:36:12 2025 +0900
+
+    commit for the second time
+
+commit 5d5bc79f611d075477975f789469a159c9c7ebad
+Author: ohirune-2525 <chiyuki.frst@gmail.com>
+Date:   Tue Sep 2 18:34:36 2025 +0900
+
+    commit for the first time
+
+chiyu@LAPTOP-0RBDJN0V MINGW64 ~/git_challenge (main)
+$
